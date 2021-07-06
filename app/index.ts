@@ -1,3 +1,3 @@
 (async () => {
-    console.log('pippo')
-})()
+  console.log('pippo');
+})();
