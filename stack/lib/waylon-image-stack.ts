@@ -49,7 +49,14 @@ export class WaylonImageStack extends cdk.Stack {
         description:
           'Function to handle upload requests and upload URL generation',
         entry: resolve(__dirname, '../../app/way-image/http/index.ts'),
+        environment: {
+          STORAGE_BUCKET: bucket.bucketName,
+          RESOURCE_TABLE: table.tableName,
+        },
       }
     );
+
+    bucket.grantReadWrite(uploadRequestFunction);
+    table.grantReadWriteData(uploadRequestFunction);
   }
 }
