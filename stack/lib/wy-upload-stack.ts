@@ -4,18 +4,18 @@ import {Bucket} from '@aws-cdk/aws-s3';
 import {AttributeType, BillingMode, Table} from '@aws-cdk/aws-dynamodb';
 import {} from '@aws-cdk/aws-lambda';
 import {NodejsFunction} from '@aws-cdk/aws-lambda-nodejs';
-interface WaylonImageStackProps extends cdk.StackProps {
+interface WyResUploadStackProps extends cdk.StackProps {
   storageBucket?: Bucket;
   resourceTable?: Table;
   region?: string;
   stage?: string;
 }
 
-export class WaylonImageStack extends cdk.Stack {
+export class WyResUploadStack extends cdk.Stack {
   constructor(
     scope: cdk.Construct,
     id: string,
-    props: WaylonImageStackProps = {}
+    props: WyResUploadStackProps = {}
   ) {
     super(scope, id, props);
 

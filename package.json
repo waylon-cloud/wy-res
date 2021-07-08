@@ -1,8 +1,8 @@
 {
-  "name": "waylon-image",
-  "version": "0.1.0",
+  "name": "wy-res",
+  "version": "0.2.0",
   "bin": {
-    "waylon-image": "build/waylon-image.js"
+    "waylon-image": "build/wy-res.js"
   },
   "engines": {
     "node": "14.15.0"

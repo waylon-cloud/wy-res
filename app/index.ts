@@ -1,3 +1,2 @@
-(async () => {
-  console.log('pippo');
-})();
+import 'reflect-metadata';
+import {container} from 'tsyringe';
