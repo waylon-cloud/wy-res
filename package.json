@@ -45,6 +45,7 @@
     "aws-sdk": "^2.940.0",
     "lambda-api": "^0.11.0",
     "source-map-support": "^0.5.19",
+    "tsyringe": "^4.6.0",
     "yup": "^0.32.9"
   }
 }
