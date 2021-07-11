@@ -1,6 +1,11 @@
 import {Entity, EntityVO} from './base/classes/Entity';
 
-export type FileResourceVO = EntityVO;
+export interface FileResourceVO extends EntityVO {
+  size?: number;
+  type?: string;
+  extension?: string;
+  content?: ArrayBuffer;
+}
 
 export class FileResource extends Entity {
   constructor(values: FileResourceVO) {
